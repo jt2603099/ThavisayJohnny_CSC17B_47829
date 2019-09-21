@@ -14,6 +14,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Dice.cpp</itemPath>
+      <itemPath>Dice.js</itemPath>
+      <itemPath>Dice.php</itemPath>
+      <itemPath>../../../../Dice-Class-JS/public_html/TestDice.html</itemPath>
+      <itemPath>TestDice.php</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -28,6 +32,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -38,9 +45,20 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="../../../../Dice-Class-JS/public_html/TestDice.html"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="Dice.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Dice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Dice.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Dice.php" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TestDice.php" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -65,9 +83,20 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="../../../../Dice-Class-JS/public_html/TestDice.html"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="Dice.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Dice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Dice.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Dice.php" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TestDice.php" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

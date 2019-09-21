@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Roll a Dice X times</title>
+        <script type="text/javascript" src="Dice.js"></script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        let numOfRolls = 6;
+        let Box = new Array(numOfRolls);
+        for (let i = 0; i < Box.length; i++) {
+            Box[i] = new Dice(i);
+            Box[i].toString();
+        }
+        </script>
+    </body>
+    
+</html>

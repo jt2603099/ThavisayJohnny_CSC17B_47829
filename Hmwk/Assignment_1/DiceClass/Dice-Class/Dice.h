@@ -36,6 +36,7 @@ public:
         return name; }
     string getPicture() {
         return picture; }
+    string toHTML();
 
 };
 

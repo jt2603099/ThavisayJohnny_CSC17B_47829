@@ -14,6 +14,7 @@
 #include "Dice.h"
 
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -59,9 +60,22 @@ void Dice::setName() {
     }
 }
 void Dice::setPicture() {
-    this->picture = "card-icons/" + this->name + ".jpg";
+    this->picture = "card-icons/" + this->name + ".png";
 }
 
 void Dice::setValue() {
     this->value = rand() % 6 + 1;
+}
+
+string Dice::toHTML() {
+    ostringstream diceNum, dicePic, diceVal;
+    diceNum << this->rollNum;
+    dicePic << this->picture;
+    diceVal << this->value;
+    string str = "\n";
+    str += ("<img src="  + this->picture + "/>");
+    str += ("\nRoll #:  " + diceNum.str());
+    str += ("\nValue :  " + diceVal.str());
+    str += "\n";
+    return str;
 }

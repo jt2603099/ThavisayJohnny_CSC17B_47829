@@ -19,17 +19,14 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-    srand(time(NULL));
+    srand(static_cast<unsigned int>(time(0)));
         
     const int rolls = 6;
     Dice **hand = new Dice*[rolls];
     
     for (int i = 0; i < rolls; i++) {
         hand[i] = new Dice(i);
-        cout << hand[i]->getName();
-        if (i < (rolls - 1)) {
-            cout << "\n \n";
-        }
+        cout << hand[i]->toHTML();
     }
     
     for (int i = 0; i < rolls; i++) {
