@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Compound Interest Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function Calculate() {
+                L = document.getElementById("L").value; // Loan amount in $'s
+                i = document.getElementById("i").value; // interest rate %/year
+                n = document.getElementById("n").value; // # of compounding period months
+                result = document.getElementById("result");
+                
+                mp = (i * (1+i)^n * L) / ((1+i)^2 - 1);
+                result.innerHTML = "Loan amount:      " + L.value;
+                result.innerHTML = "Interest Rate:    " + i.value;
+                result.innerHTML = "Number of Months: " + n.value;
+            }
+        </script>
+        <style>
+            div {
+                display: table-row;
+            }
+            label, input {
+                display: table-cell;
+            }
+        </style>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
