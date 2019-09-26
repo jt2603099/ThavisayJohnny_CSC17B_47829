@@ -9,8 +9,7 @@ and open the template in the editor.
         <title>Compound Interest Calculator</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="./JavascriptLabTableGeneration.js">
-        </script>
+        <?php include '.PHPLabTableGeneration.php';?>
         <style>
             div {
                 display: table-row;
@@ -29,10 +28,6 @@ and open the template in the editor.
         
         <div id="results"></div>
         <button onclick="getElementById('results').innerHTML=display()">Calculate</button>
-
-        <script type = "text/javascript">
-            //display();
-        </script>
       
     </body>
 </html>
