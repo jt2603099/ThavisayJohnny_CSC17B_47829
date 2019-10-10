@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html"; sharset=utf-8"/>
+    <title>Display the Surveys and add more if be</title>
+    <script type="text/javascript" src="Survey.js"></script>
+    <script type="text/javascript" src="getForm.js"></script>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      
+      //Grab the info from the form
+      var url=document.location.href;
+        var $_GET=getForm(url);
+        var counter=0;
+        var questNum = [];
+
+        for(property in $_GET){
+            var str=$_GET[property];          //Place property value in string
+            var dec=decodeURIComponent(str);  //Convert to ascii
+            var clean=dec.replace(/\++/g,' ');//Remove + and replace by space
+            $_GET[property]=clean;            //Cleaned values
+            counter++;
+            if(counter>2&&clean!="")questNum.push(clean); //Place answers int their own array
+        }
+        
+        //Fill the Question with form information and display
+        var survey=new Survey($_GET["Name"],$_GET["Description"], questNum);
+        survey.display('SurveyBox');
+        survey.displayForm();
+    </script>
+  </body>
+
+</html>

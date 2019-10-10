@@ -1,0 +1,22 @@
+/* 
+    Created on : Sep 18, 2019, 6:28:09 PM
+    Author     : Head First Javascript Example Project
+*/
+
+body {
+    background-color: black;
+}
+div#board {
+    position: relative;
+    width: 1024px;
+    height: 863px;
+    margin: auto;
+    background: url("/assets/board.jpg") no-repeat;
+}
+
+div#messageArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: rgb(83, 175, 19);
+}
