@@ -4,19 +4,62 @@
 */
 
 body {
-    background-color: black;
+    background-color: yellow;
 }
-div#board {
+
+table#bg {
     position: relative;
-    width: 1024px;
-    height: 863px;
+    width: 1026px;
+    height: 864px;
     margin: auto;
-    background: url("/assets/board.jpg") no-repeat;
+    background: url("../assets/board.jpg") no-repeat;
 }
 
 div#messageArea {
+    z-index: 10;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    color: rgb(83, 175, 19);
+    vertical-align: center;
+    bottom: 0px;
+    right: 25%;
+    left: 50%;
+    margin-left:-150px;
+    color: green;
+    font-size: 64px;
+}
+
+table {
+    /*top: 8px;*/
+    border-spacing: 0px;
+    visibility: none;
+}
+
+tr {
+    position: static;
+    width: 1026px;
+    height: 288px;
+}
+
+td#0 td#1 td#2 {
+    top: 2px;
+}
+
+#6, #7, #8 {
+    bottom: 7px;
+}
+
+td {
+    position: relative;
+    width: 342px;
+    height: 288px;
+    font-size: 256px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td:hover {
+    outline: 2px solid white;
+}
+
+td[src] {
+    z-index: 10;
 }

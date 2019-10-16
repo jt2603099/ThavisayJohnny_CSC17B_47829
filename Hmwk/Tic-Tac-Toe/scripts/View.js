@@ -4,15 +4,15 @@
  */
 
 
-var view = {
-    displayX: function(location) {
-        var cell = document.getElementById(location);
-        cell.setAttribute("class", "hit");
+var view = {    
+    displayShape: function(cellId, shapeText) {
+        //debugger;
+        var tableCell = document.getElementById(cellId);
+        //tableCell.setAttribute("src", urlOfShape);
+        tableCell.innerText = shapeText;
     },
-
-    displayO: function(location) {
-        var cell = document.getElementById(location);
-        cell.setAttribute("class", "miss");
+    displayMessage: function(msg) {
+        var msgArea = document.getElementById("messageArea");
+        msgArea.innerHTML = msg;
     }
-
-}; 
+};

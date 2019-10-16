@@ -7,11 +7,18 @@
 
 // event handlers
 
-function handleFireButton() {
-    var guessInput = document.getElementById("guessInput");
-    var guess = guessInput.value.toUpperCase();
-
-    controller.processGuess(guess);
-
-    guessInput.value = "";
-}
+var eventListeners = {
+  onClickListener: function() {
+    var tableRow = document.querySelector('table');
+    
+    tableRow.addEventListener('click', function(e) {
+        var elementClicked = e.target;
+        console.log(parseInt(elementClicked.id));
+        if (elementClicked.tagName === 'TD') {
+            controller.setShape(parseInt(elementClicked.id));
+        }
+        controller.processWinner();
+    });
+  }
+};
+eventListeners.onClickListener();
