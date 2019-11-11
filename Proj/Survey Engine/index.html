@@ -3,21 +3,31 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html"; charset=utf-8"/>
     <title>Form to add questions to a Survey</title>
-    <script src="getForm.js" async></script>
+    <link rel="stylesheet" href="style/styles.css"/>
   </head>
 
-  <body class="main-body">
+  <body>
     <section class="container content-section">
-      <div>
-        <form name="surveyForm" action="getForm.html" method="get">
-          <input name="Name" type="text"/>        <label>Name</label><br></br>
-          <input name="Description" type="text"/> <label>Description</label><br></br>
-          <input name="Answer1" type="text"/>     <label>Answer1</label><br></br>
-          <input name="Answer2" type="text"/>     <label>Asnwer2</label><br></br>
-          <input name="Answer3" type="text"/>     <label>Answer3</label><br></br>
-          <input name="Submit" type="submit"/>
-        </form>
+      <div class="container form-container">
+        <ul class="container form-container" id="form-messages">
+          <li></li>
+        </ul>
+          <div class="container form-content" name="surveyForm">
+            <input id="surveyName" type="text"/>        <label>Name</label><br></br>
+            <input id="surveyDescription" type="text"/> <label>Description</label><br></br>
+            <input id="Answer1" type="text"/>     <label>Answer1</label><br></br>
+            <input id="Answer2" type="text"/>     <label>Answer2</label><br></br>
+            <input id="Answer3" type="text"/>     <label>Answer3</label><br></br>
+            <button class="btn btn-submit" id="btn-submit" type="submit"> Submit</button>
+          </form>
+          </div>
       </div>
     </section>
+
+    <section>
+
+    </section>
+
   </body>
+  <script src="scripts/script.js"></script>
 </html>

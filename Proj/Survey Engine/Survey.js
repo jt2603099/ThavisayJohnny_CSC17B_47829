@@ -71,8 +71,6 @@ function Survey(name,description,quesNum) {
       surveys.push(this);
       this.setObj(key, surveys);
 
-      //var obj = JSON.parse(key);
-
       surveyDescription.innerHTML = "<p>" + this.description + "</p>";
       document.getElementById("survey-container").appendChild(surveyDescription);
       for (var i = 0; i < this.questNum.length; i++) {
