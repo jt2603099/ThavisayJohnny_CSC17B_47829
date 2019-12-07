@@ -42,13 +42,19 @@ html, body {
 }
 .main-header {
     background-color: rgba(0, 0, 0, .6);
-    background-image: url("/Proj/Shopping Cart/Images/Jonas\ Brother\ Background\ Header.jpg");
+    background-image: url("/Proj/Shopping Cart/Images/BackgroundLaoFlag.jpg");
     background-size: cover;
     background-blend-mode: multiply;
+    background-position: center;
     padding-bottom: 20px;
 }
 
-.band-name {
+.main-header background-image {
+    width: 100%;
+    height: auto;
+}
+
+.title-name {
     text-align: center;
     margin: 0;
     font-size: 4em;
@@ -57,7 +63,7 @@ html, body {
     color: white;
 }
 
-.band-name-large {
+.title-name-large {
     font-size: 8em;
 }
 
