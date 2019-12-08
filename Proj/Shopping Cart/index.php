@@ -1,24 +1,21 @@
-<!DOCTYPE html>
-
-<html>
-
+<?php
+    include 'Database/includes/autoloader.php';
+    require "header.php"
+?>
   <head>
       <title>Lao Pins | Store</title>
       <meta name="description" content="Lao Pin Store Frontpage Demo">
-      <link rel="stylesheet" href="style/styles.css"/>
-      <script src="store.js" async></script>
+      <script src="store.js"></script>
   </head>
-  <body>
-    <header class="main-header">
-        <nav class="main-nav nav">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-          </ul>
-        </nav>
-      <h1 class="title-name title-name-large">Lao Pins</h1>
-    </header>
     
     <section class="container content-section">
+      <?php
+        if (isset($_SESSION['id'])) {
+            echo '<p class="login-status">You are logged in!</p>';
+        } else {
+            echo '<p class="login-status">You are logged out!</p>';
+        }
+      ?>
       <h2 class="section-header">Store</h2>
       <div class="shop-items">
           <div class="shop-item">
@@ -76,18 +73,9 @@
               <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
     </section>
 
-    <footer class="main-footer">
-        <div class="container main-footer-container">
-          <h3 class="title-name">Contact</h3>
-            <ul class="nav footer-nav">
-                <li>
-                  <a href="https://twitter.com/TeaDroplets" target="_blank">
-                    <img src="./Images/Twitter Logo.png">
-                  </a>
-                </li>
-            </ul>
-      </div>
-    </footer>
-  </body>  
+<?php
+require "footer.php"
+?>
+
 
 </html>
