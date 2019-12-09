@@ -2,7 +2,7 @@
 
 if (isset($_POST['signup-submit'])) {
 
-    require 'dbh.inc.php';
+    require 'dbh.scr.php';
 
     $username = $_POST['uid'];
     $email = $_POST['mail'];
@@ -13,16 +13,16 @@ if (isset($_POST['signup-submit'])) {
         header("Location: ../../signup.php?error=emptyfields&uid=" .$username. "&mail=" .$email);
         exit();
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        header("Location: ../../signup.php?error=invalidmailuid&uid");
+        header("Location: ../../signup.php?error=invalidmailuserid");
         exit();
     } else if  (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location: ../../signup.php?error=invalidmail&uid=" .$username);
         exit();
     } else if  (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        header("Location: ../../signup.php?error=invaliduid&mail=" .$email);
+        header("Location: ../../signup.php?error=invaliduserid&mail=" .$email);
         exit();
     } else if ($password !== $passwordRepeat) {
-        header("Location: ../../signup.php?error=passwordcheck&uid=" .$username. "&mail" .$email);
+        header("Location: ../../signup.php?error=passwordcheck&userid=" .$username. "&mail" .$email);
         exit();
     } else {
 

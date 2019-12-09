@@ -8,14 +8,14 @@
       <script src="store.js"></script>
   </head>
     
-    <section class="container content-section">
-      <?php
+    <?php
         if (isset($_SESSION['id'])) {
-            echo '<p class="login-status">You are logged in!</p>';
+            echo '<p class="signup-success login-status">You are logged in!</p>';
         } else {
-            echo '<p class="login-status">You are logged out!</p>';
+            echo '<p class="signup-error login-status">You are logged out!</p>';
         }
-      ?>
+    ?>
+    <section class="container content-section">
       <h2 class="section-header">Store</h2>
       <div class="shop-items">
           <div class="shop-item">

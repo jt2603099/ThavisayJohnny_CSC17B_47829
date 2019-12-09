@@ -15,11 +15,11 @@
                     <div class="form login-form">
                     <?php
                     if (isset($_SESSION['id'])) {
-                        echo '<form action="Database/Classes/logout.inc.php" method="post">
+                        echo '<form action="Database/Classes/logout.scr.php" method="post">
                             <button class="btn btn-primary" type="submit" name="logout-submit">Logout</button>
                             </form>';
                     } else {
-                        echo '<form action="Database/Classes/login.inc.php" method="post">
+                        echo '<form action="Database/Classes/login.scr.php" method="post">
                         <input class="input login-input" type="text" name="mailuid" placeholder="Username/E-Mail">
                         <input class="input login-input" type="password" name="pwd" placeholder="Password">
                         <button class="btn btn-primary" type="submit" name="login-submit">Login</button>
