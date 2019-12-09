@@ -2,7 +2,7 @@
 
 if (isset($_POST['login-submit'])) {
 
-require 'dbh.inc.php';
+require 'dbh.scr.php';
 
 $mailuid = $_POST['mailuid'];
 $password = $_POST['pwd'];
