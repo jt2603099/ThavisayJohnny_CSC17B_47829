@@ -19,9 +19,9 @@ html, body {
     display: inline;
 }
 
-.nav a {
+.nav a, a {
     display: inline-block;
-    padding: .5em;
+    padding: .39em;
     color: white;
     text-decoration: none;
 }
@@ -47,15 +47,6 @@ html, body {
 
 div.login-form {
     float: right;
-}
-
-.login-status {
-    position: relative;
-    margin: auto;
-    text-align: right;
-    font-size: 1em;
-    font-weight: bold;
-    color: black;
 }
 
 .main-header {
@@ -211,8 +202,12 @@ div.login-form {
     background-color: #2D9CDB;
 }
 
+.btn-login {
+    font-size: 13px;
+}
+
 .btn-register {
-    font-size: .96em;
+    padding: .39em;
     background-color: grey;
 }
 
@@ -354,6 +349,10 @@ div.login-form {
     font-size: 1.75em;
 }
 
+.btn-margin {
+    margin: 5px;
+}
+
 .input {
     height: 24px;
     width: 150px;
@@ -371,14 +370,97 @@ div.login-form {
     margin-left: 4.5em;
 }
 
-.signup-form {
-
-}
-
 .signup-error {
+    margin: 15px 15px;
+    text-align: center;
+    font-weight: bold;
     color: red;
 }
 
+.signup-form {
+    text-align: center;
+    display: block;
+}
+
+.signup-input {
+    text-indent: 10px;
+    font-size: 1em;
+    margin: auto;
+    margin-top: 10px;
+    width: 250px;
+    padding: 15px 0px 15px 0px;
+    display: block;
+}
+
 .signup-success {
+    margin: 15px 15px;
+    text-align: center;
+    font-weight: bold;
     color: green;
+}
+
+.btn-submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: inline;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+
+table td, table th {
+    border: 1px solid #000000;
+    padding: 5px 4px;
+  }
+
+table tbody td {
+    font-size: 1em;
+  }
+
+table tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+
+table.tr {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  }
+
+table.product-row-header th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+
+  #add-a-product {
+      position: relative;
+      top: -75px;
+  }
+
+  #product-to-home {
+    position: relative;
+    top: -75px;
+  }
+
+
+.login-status {
+    position: relative;
+    margin: auto;
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.btn-center {
+    text-align: center;
 }

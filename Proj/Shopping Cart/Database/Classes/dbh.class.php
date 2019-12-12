@@ -1,6 +1,6 @@
 <?php
 
-class Databasehandler {
+class Dbh {
 
     private $servername;
     private $username;

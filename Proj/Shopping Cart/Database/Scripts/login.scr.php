@@ -29,6 +29,7 @@ if (empty($mailuid) || empty($password)) {
             session_start();
             $_SESSION['id'] = $row['id'];
             $_SESSION['UserID'] = $row['UserID'];
+            $_SESSION['isAdmin'] = $row['isAdmin'];
             
             header("Location: ../../index.php?login=success");
             exit();

@@ -10,9 +10,9 @@
     
     <?php
         if (isset($_SESSION['id'])) {
-            echo '<p class="signup-success login-status">You are logged in!</p>';
+            echo '<p class="login-status signup-success">You are logged in!</p>';
         } else {
-            echo '<p class="signup-error login-status">You are logged out!</p>';
+            echo '<p class="login-status signup-error">You are logged out!</p>';
         }
     ?>
     <section class="container content-section">

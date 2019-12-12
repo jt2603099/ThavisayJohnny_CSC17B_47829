@@ -25,12 +25,12 @@
             echo '<p class="signup-success"">Signup successful!</p>';
         }
     ?>
-    <form class="form signup-form" action="Database/Classes/signup.inc.php" method="post">
+    <form class="form signup-form" action="Database/Scripts/signup.scr.php" method="post">
         <input class="input signup-input" type="text" name="uid" placeholder="Username">
         <input class="input signup-input" type="text" name="mail" placeholder="E-mail">
         <input class="input signup-input" type="password" name="pwd" placeholder="Password">
         <input class="input signup-input" type="password" name="pwd-repeat" placeholder="Repeat password">
-        <button class="btn btn-primary" type="submit" name="signup-submit" style="margin-bottom: 10px">Submit</button>
+        <button class="btn btn-primary btn-submit" type="submit" name="signup-submit" style="margin-bottom: 10px">Submit</button>
     </form>
 </section>
 
