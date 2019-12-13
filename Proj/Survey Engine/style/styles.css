@@ -9,3 +9,260 @@
     padding: 10px 25px;
     max-width: 250px;
 }
+
+* {
+    box-sizing: border-box;
+    color: gray;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a, a {
+    display: inline-block;
+    padding: .39em;
+    color: white;
+    text-decoration: none;
+}
+
+.home-ref {
+    justify-content: center;
+}
+
+.main-nav {
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+div.login-form {
+    float: right;
+}
+
+.title-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: Paytone One;
+    font-weight: lighter;
+    color: white;
+}
+
+.title-name-large {
+    font-size: 4em;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    padding-bottom: 20px;
+}
+
+.main-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.footer-title {
+    display: inline-block;
+}
+
+.footer-nav li {
+    padding-left: 0;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-icons {
+    position: relative;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-login {
+    font-size: 13px;
+}
+
+.btn-register {
+    padding: .39em;
+    background-color: grey;
+}
+
+.input {
+    height: 24px;
+    width: 150px;
+    border-radius: 2px;
+    border: 1.5px solid #56CCF2;
+    background-color: #eee;
+    color: rgb(43, 43, 43);
+    padding-left: 5px;
+    text-align: left;
+    font-size: .85em;
+}
+
+.login-input {
+    color: black;
+}
+
+.signup-error {
+    margin: 15px 15px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.signup-form {
+    text-align: center;
+    display: block;
+}
+
+form label {
+    display: inline;
+    text-align: center;
+    color: black;
+}
+
+.signup-input {
+    text-indent: 10px;
+    font-size: 1em;
+    margin: auto;
+    margin-top: 10px;
+    width: 250px;
+    padding: 15px 0px 15px 0px;
+    display: block;
+}
+
+.signup-success {
+    margin: 15px 15px;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+  }
+
+table td, table th {
+    border: 1px solid #000000;
+    padding: 5px 4px;
+  }
+
+table tbody td {
+    font-size: 1em;
+  }
+
+table tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+
+table.tr {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  }
+
+table.product-row-header th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+
+#add-a-survey {
+    position: relative;
+    top: -75px;
+}
+
+#survey-to-home {
+  position: relative;
+  top: -75px;
+}

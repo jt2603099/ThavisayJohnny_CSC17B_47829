@@ -1,0 +1,1 @@
+CREATE SCHEMA `jthavisay_survey` ;
