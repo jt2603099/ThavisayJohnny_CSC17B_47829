@@ -5,6 +5,7 @@ if (isset($_POST['editproduct-submit'])) {
 
     require 'dbh.scr.php';
 
+    $id = $_POST['pid'];
     $pname = $_POST['newproductname'];
     $pdesc = $_POST['newproductdesc'];
     $pprice = $_POST['newproductprice'];
@@ -16,8 +17,8 @@ if (isset($_POST['editproduct-submit'])) {
     }
 
     $sql = "UPDATE `jthavisay_shoppingcart`.`product` 
-                SET `Name` = '$pname', `Description` = '$pdesc', `Price` = '$pprice', `Amount` = '4' 
-            WHERE (`id` = '5');";
+                SET `Name` = '$pname', `Description` = '$pdesc', `Price` = '$pprice', `Amount` = '$pamount' 
+            WHERE `id` = '$id';";
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
