@@ -9,7 +9,7 @@ CREATE TABLE `jthavisay_shoppingcart`.`user` (
   PRIMARY KEY (`id`));
 
 INSERT INTO user 
-	(Userid, Password, Email, isAdmin) 
+	(UserID, Password, Email, isAdmin) 
 VALUES 
 	('admin', '$2y$10$QxQbbYjfQ1Gby3pgDLSSg.T5kp6LwfmyYathgNVklIiicfeuhv5Be', 'admin@admin.com', '1'),
     ('user', '$2y$10$J5DSJtXxkwNaCVcXy/0WZ.b54f1duxFbvJZkfNGKDi4oO6mxLzmUy', 'user@user.com', '0');

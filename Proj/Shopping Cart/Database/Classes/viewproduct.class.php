@@ -36,6 +36,7 @@ class ViewProduct extends Product {
         foreach ($datas as $data) {
 
             echo '<form class="form signpup-form" action="Database/Scripts/editproduct.scr.php" method="post">';
+                echo '<input class="input signup-input" type="text" name="pid" style="display: none;" value=' .$query_id. '>';
                 echo '<label class="signup-input" for="npname">Name</tr><input class="input signup-input" type="text" id="npname" name="newproductname" value="' .$data['Name']. '">';
                 echo '<label class="signup-input" for="npdesc">Description</label><input class="input signup-input" type="text" id="npdesc" name="newproductdesc" value="' .$data['Description']. '">';
                 echo '<label class="signup-input" for="npprice">Price</label><input class="input signup-input" type="text" id="npprice" name="newproductprice" value="' .$data['Price']. '">';

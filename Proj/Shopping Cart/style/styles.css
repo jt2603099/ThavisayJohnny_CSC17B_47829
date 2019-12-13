@@ -81,7 +81,6 @@ div.login-form {
 }
 
 .container {
-    max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
@@ -103,13 +102,16 @@ div.login-form {
 }
 
 .main-footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #56CCF2;
     color: white;
     padding: .25em 0;
 }
 
 .main-footer-container {
+    width: fit-content;
     display: flex;
     align-items: center;
 }
@@ -410,7 +412,8 @@ form label {
 }
 
 table {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
     border-collapse: collapse;
   }
